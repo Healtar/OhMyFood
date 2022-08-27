@@ -1,3 +1,32 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Shrikhand.ttf");
+}
+/*************** COMPONENTS **************/
+/*****************************************/
+header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 
+.header__title {
+  display: flex;
+  justify-content: center;
+}
+.header__title span {
+  font-family: "Shrikhand";
+  display: none;
+  font-size: 2em;
+}
+.header__title .logo {
+  width: 60%;
+}
+
+/*************** COMPONENTS **************/
+/*****************************************/
 
 /*# sourceMappingURL=style.css.map */
