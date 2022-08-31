@@ -1,29 +1,130 @@
+/*************** BASE ********************/
+/*****************************************/
+body, h1, h2, h3, h4, ul, li, a, p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+}
+
 @font-face {
   font-family: "Shrikhand";
   src: url("../fonts/Shrikhand.ttf");
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Shrikhand.ttf");
+  src: url("../fonts/Roboto.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+p, a, li, strong, button {
+  font-family: "Roboto", sans-serif;
+}
+
+.__header-title {
+  font-family: "Shrikhand";
+}
+
+/*************** BASE **************/
+/*****************************************/
+/*************** ABSTRACTS **************/
+/****************************************/
+/******** COLORS ***********/
+/**************************/
+/******** COLORS ***********/
+/**************************/
+/*************** ABSTRACTS **************/
+/****************************************/
 /*************** COMPONENTS **************/
 /*****************************************/
-header {
+.main__header {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
 .header__title {
-  display: flex;
   justify-content: center;
 }
 .header__title span {
-  font-family: "Shrikhand";
   display: none;
   font-size: 2em;
 }
 .header__title .logo {
   width: 60%;
+}
+
+.main__main__header .location {
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #eaeaea;
+}
+.main__main__header .reservation {
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f6f6f6;
+}
+.main__main__header .reservation strong {
+  display: inline-block;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.main__main__header .reservation p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.button {
+  border-radius: 30px;
+  font-size: 13px;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(255, 121, 218);
+  background: linear-gradient(172deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  box-shadow: 0px 5px 20px -10px rgb(53, 53, 53);
+}
+
+.main__footer {
+  background-color: #353535;
+  line-height: 1.4;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.main__footer__header img {
+  width: 90px;
+}
+.main__footer__header span {
+  display: none;
+}
+.main__footer a {
+  color: #FFFFFF;
+  font-size: 0.8em;
+}
+.main__footer .icone {
+  width: 20px;
+  padding-right: 5px;
 }
 
 /*************** COMPONENTS **************/

@@ -1,15 +1,12 @@
-header{
+.main__header{
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
 .header__title{
-    display: flex;
     justify-content: center;
 
     span{
-        @include title-font;
-
         display: none;
         font-size: 2em;
     }

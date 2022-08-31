@@ -1,7 +1,7 @@
-@mixin title-font{
-    font-family: "Shrikhand";
+p, a, li, strong, button{
+    font-family: "Roboto", sans-serif;
 }
 
-@mixin text-font{
-    font-family: "Roboto";
+.__header-title{
+    font-family: "Shrikhand";
 }

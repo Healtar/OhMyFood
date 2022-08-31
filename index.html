@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>OhMyFood!</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="header__title">
+
+<head>
+    <title>OhMyFood!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main__header">
+        <div class="container">
+            <div class="header__title flex">
                 <img class="logo" src="img/logo/ohmyfood.png" alt="oh my food">
                 <span>Ohmyfood</span>
             </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <header class="main__main__header">
+            <div class="location flex">
+                <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+            </div>
+
+            <div class="reservation">
+                <strong>Réservez le menu qui vous convient</strong>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <button class="button">Explorez nos restaurants</button>
+            </div>
         </header>
-    </body>
+    </main>
+
+    <footer class="main__footer">
+        <div class="container">
+            <header class="main__footer__header">
+                <img src="img/logo/ohmyfood.png" alt="Oh my food">
+                <span>Oh my food</span>
+            </header>
+            <nav class="main__footer__nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#"><i class="fa-solid icone fa-utensils"></i>Proposer un restaurant</a></li>
+                    <li class="nav-item"><a href="#"><i class="fa-solid icone fa-handshake-angle"></i>Devenir partenaire</a>
+                    </li>
+                    <li class="nav-item"><a href="#">Mentions légales</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
 </html>

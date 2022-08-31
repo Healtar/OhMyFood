@@ -1,0 +1,31 @@
+.main{
+    &__main__header{
+        .location{
+
+       
+       justify-content: center;
+       padding: 10px 0;
+       background-color: $gray-darker;
+    }
+
+    .reservation{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        background-color: $gray-ligther;
+        strong{
+            display: inline-block;
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    }
+}
