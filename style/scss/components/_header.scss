@@ -1,17 +1,18 @@
-.main__header{
+.main__header {
     padding-top: 20px;
     padding-bottom: 10px;
-}
+   
 
-.header__title{
-    justify-content: center;
+    &__title {
+        justify-content: center;
 
-    span{
-        display: none;
-        font-size: 2em;
-    }
+        span {
+            display: none;
+            font-size: 2em;
+        }
 
-    .logo{
-        width: 60%;
+        .logo {
+            width: 60%;
+        }
     }
 }

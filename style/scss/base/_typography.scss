@@ -1,7 +1,11 @@
-p, a, li, strong, button{
+p, a, li, strong, button, span, h2{
     font-family: "Roboto", sans-serif;
 }
 
 .__header-title{
     font-family: "Shrikhand";
+}
+
+h2{
+    font-size: 20px;
 }

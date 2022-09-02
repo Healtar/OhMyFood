@@ -1,31 +1,84 @@
-.main{
-    &__main__header{
-        .location{
+.main {
 
-       
-       justify-content: center;
-       padding: 10px 0;
-       background-color: $gray-darker;
-    }
+    flex-direction: column;
+    gap: 20px;
 
-    .reservation{
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-        background-color: $gray-ligther;
-        strong{
-            display: inline-block;
-            font-size: 22px;
-            margin-bottom: 10px;
-            font-weight: bold;
+    &__main__header {
+        .location {
+            justify-content: center;
+            padding: 12px 0;
+            background-color: $gray-ligther;
+            color: $dark;
+            gap: 10px;
+            box-shadow: inset 0px 4px 15px -10px $gray;            
         }
 
-        p{
-            font-size: 16px;
-            margin-bottom: 20px;
+        .reservation {
+            flex-direction: column;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: $ligth;
+            strong {
+                display: inline-block;
+                font-size: 22px;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
         }
     }
+    .section {
+        &__fonctionnement {
+            flex-direction: column;
+            gap: 20px;
 
+            &__steps {
+                flex-direction: column;
+                gap: 20px;
+                font-size: 14px;
+                
 
+                .icone{
+                    margin: 0 20px;
+                    color: $gray;
+                }
+
+                .step{
+                    &:last-child{
+                        background-color: $primary-transparant;
+                        .icone{
+                            color: $primary;
+                        }
+                    }
+                    .rounded-number {
+                        background-color: $primary;
+                        border-radius: 20px;
+                        padding: 4px 8px;
+                        font-size: 13px;
+                        font-weight: normal;
+                        margin-left: -30px;
+                        color: white;
+                    }
+                    font-size: 14px;
+                    font-weight: bold;
+                   background-color: $ligth;
+                   padding: 20px;
+                   border-radius: 20px;
+                   box-shadow: 2px 5px 20px -10px $gray;
+                }
+            }
+        }
+
+        &__restaurants{
+            padding-top: 40px;
+            padding-bottom: 60px;
+            flex-direction: column;
+            gap: 15px;
+            background-color: $ligth;
+        }
     }
 }
