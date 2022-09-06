@@ -5,7 +5,9 @@
 
     &__title {
         justify-content: center;
-
+        a{
+            float: left;
+        }
         span {
             display: none;
             font-size: 2em;

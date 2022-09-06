@@ -1,25 +1,27 @@
-.main__footer{
+.main__footer {
     background-color: $dark;
     line-height: 1.4;
     padding-top: 10px;
     padding-bottom: 20px;
 
-    &__header{
-       img{
-        width: 90px;
-       }
+    &__header {
+        img {
+            width: 90px;
+        }
 
-       span{
-        display: none;
-       }
+        margin: 5px 0;
+
+        span {
+            display: none;
+        }
     }
 
-    a{
+    a {
         color: $white;
         font-size: 0.8em;
     }
 
-    .icone{
+    .icone {
         width: 20px;
         padding-right: 5px;
     }

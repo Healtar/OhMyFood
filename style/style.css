@@ -45,12 +45,16 @@ p, a, li, strong, button, span, h2 {
   font-family: "Roboto", sans-serif;
 }
 
-.__header-title {
+.header-title {
   font-family: "Shrikhand";
 }
 
 h2 {
   font-size: 20px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /*************** BASE **************/
@@ -71,6 +75,9 @@ h2 {
 }
 .main__header__title {
   justify-content: center;
+}
+.main__header__title a {
+  float: left;
 }
 .main__header__title span {
   display: none;
@@ -151,6 +158,9 @@ h2 {
   gap: 15px;
   background-color: #f6f6f6;
 }
+.main .section__restaurants .fa-heart {
+  margin-right: 15px;
+}
 
 .button {
   border-radius: 30px;
@@ -199,6 +209,9 @@ h2 {
   line-height: 1.4;
   padding-top: 10px;
   padding-bottom: 20px;
+}
+.main__footer__header {
+  margin: 5px 0;
 }
 .main__footer__header img {
   width: 90px;
