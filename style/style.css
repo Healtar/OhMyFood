@@ -160,6 +160,8 @@ h2 {
 }
 .main .section__restaurants .fa-heart {
   margin-right: 15px;
+  color: #fff;
+  fill: aquamarine;
 }
 
 .button {
