@@ -4,17 +4,22 @@
    
 
     &__title {
+        
         justify-content: center;
         a{
-            float: left;
+            margin: auto 0;
+            margin-right: 40px;
+           
         }
         span {
             display: none;
             font-size: 2em;
+            margin-right: 40px;
         }
 
         .logo {
             width: 60%;
+            margin-right: 40px;
         }
     }
 }

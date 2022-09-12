@@ -77,21 +77,24 @@ h2 {
   justify-content: center;
 }
 .main__header__title a {
-  float: left;
+  margin: auto 0;
+  margin-right: 40px;
 }
 .main__header__title span {
   display: none;
   font-size: 2em;
+  margin-right: 40px;
 }
 .main__header__title .logo {
   width: 60%;
+  margin-right: 40px;
 }
 
 .main {
   flex-direction: column;
   gap: 20px;
 }
-.main__main__header .location {
+.main__main-header .location {
   justify-content: center;
   padding: 12px 0;
   background-color: #eaeaea;
@@ -99,19 +102,19 @@ h2 {
   gap: 10px;
   box-shadow: inset 0px 4px 15px -10px #7e7e7e;
 }
-.main__main__header .reservation {
+.main__main-header .reservation {
   flex-direction: column;
   text-align: center;
   padding: 40px 20px;
   background-color: #f6f6f6;
 }
-.main__main__header .reservation strong {
+.main__main-header .reservation strong {
   display: inline-block;
   font-size: 22px;
   margin-bottom: 10px;
   font-weight: bold;
 }
-.main__main__header .reservation p {
+.main__main-header .reservation p {
   font-size: 16px;
   margin-bottom: 20px;
 }
