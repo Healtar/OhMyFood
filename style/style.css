@@ -217,7 +217,7 @@ h2 {
   stroke: #000;
 }
 .icone .heart:active {
-  fill: purple;
+  fill: #FF79DA;
   transition: 0.2s ease-in-out;
 }
 
@@ -230,8 +230,12 @@ h2 {
 .main__footer__header {
   margin: 5px 0;
 }
-.main__footer__header img {
-  width: 90px;
+.main__footer__header svg {
+  width: 120px;
+  height: 34px;
+}
+.main__footer__header svg path {
+  fill: #fff;
 }
 .main__footer__header span {
   display: none;

@@ -5,8 +5,12 @@
     padding-bottom: 20px;
 
     &__header {
-        img {
-            width: 90px;
+        svg {
+            width: 120px; 
+            height: 34px;
+            path{
+                fill: #fff;
+            }
         }
 
         margin: 5px 0;
