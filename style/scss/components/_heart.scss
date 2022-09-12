@@ -1,0 +1,14 @@
+.icone{
+    .heart{
+        width: 25px;
+        height: 25px;
+        fill: #FFF;
+        stroke-width: 40px;
+        stroke: #000;
+
+        &:active{
+            fill: purple;
+            transition: 0.2s ease-in-out;      
+        }
+    }
+}
