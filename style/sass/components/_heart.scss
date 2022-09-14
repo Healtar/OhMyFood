@@ -1,0 +1,18 @@
+
+    .heart{
+        width: 25px;
+        height: 25px;
+        fill: url(#gradiant);
+        stroke-width: 20px;
+        stroke: #000;
+        position:relative;  
+        overflow:hidden;
+
+        &:active{
+            background-color: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(204,105,219,1) 72%, rgba(255,121,218,1) 100%);
+            transition: 0.2s ease-in-out;      
+        }
+
+   
+    }
+

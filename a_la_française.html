@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,25 +10,157 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="style/style.css" rel="stylesheet">
-  
+
 </head>
+
 <body>
-    <header class="main__header">
+    <header class="main-header">
         <div class="container">
-            <div class="main__header__title flex">
+            <div class="main-header__title flex">
                 <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
                 <img class="logo" src="img/logo/ohmyfood.png" alt="oh my food">
-                <span>Ohmyfood</span>
+                <span>Ohmyfood - A la française</span>
             </div>
         </div>
     </header>
-    <div style="margin: 50px 0;"></div> <!-- space-->
-    <main class="menu">
-        <header class="menu__main-header">
-            <h2>
-                
-            </h2>
+
+    <main class="main-menu flex">
+        <header class="main-menu__main-header">
+            <div class="header-background-img">
+                <img src="img\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant à la française">
+            </div>
         </header>
+
+        <section class="container">
+            <header class="section-header flex">
+                <h2>A la française</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 612" class="heart">
+                    <defs>
+                        <linearGradient id="gradiant" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="20%" stop-color="#9356DC" />
+                            <stop offset="100%" stop-color="#FF79DA" />
+                        </linearGradient>
+                    </defs>
+                    <g id="heart">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                    </g>
+                </svg>
+            </header>
+
+
+            <article class="article flex">
+                <div class="article-header">
+                <h3>entrées</h3>
+                <div class="green-line"></div>
+                </div>
+                <div class="menu-item flex">
+                    <div class="menu-item-text">
+                        <strong>Tartare de poulpe acidulée</strong>
+                        <p>Aux zests d'orange</p>
+                    </div>
+                    <div class="menu-item-prix">
+                        25€
+                    </div>
+                </div>
+
+                <div class="menu-item flex">
+                    <div class="menu-item-text">
+                        <strong>Velouté de légumes d'antan</strong>
+                        <p>Carotte, panais, topinambour</p>
+                    </div>
+                    <div class="menu-item-prix">
+                        35€
+                    </div>
+                </div>
+
+                <div class="menu-item flex">
+                    <div class="menu-item-text">
+                        <strong>Soupe à l'oignon</strong>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="menu-item-prix">
+                        20€
+                    </div>
+                </div>
+            </article>
+
+            <article class="article flex">
+                <div class="article-header">
+                    <h3>plats</h3>
+                    <div class="green-line"></div>
+                </div>
+
+                <div class="menu-item flex">
+                    <div class="menu-item-text">
+                        <strong>Coquilles Saint-Jacques</strong>
+                        <p>Accompagnées d'une purée de panais</p>
+                    </div>
+                    <div class="menu-item-prix">
+                        40€
+                    </div>
+                </div>
+
+                <div class="menu-item flex">
+                    <div class="menu-item-text">
+                        <strong>Magret de canard</strong>
+                        <p>Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="menu-item-prix">
+                        35€
+                    </div>
+                </div>
+
+                <div class="menu-item flex">
+                    <div class="menu-item-text">
+                        <strong>Pigeonneau d’Ille-et-Vilaine</strong>
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="menu-item-prix">
+                        44€
+                    </div>
+                </div>
+            </article>
+
+            <article class="article flex">
+                <div class="article-header">
+                    <h3>desserts</h3>
+                    <div class="green-line">
+                    </div>
+                </div>
+                <div class="menu-item flex">
+                    <div class="menu-item-text">
+                        <strong>Pétales de violettes glacés</strong>
+                        <p>Et purée de noisettes</p>
+                    </div>
+                    <div class="menu-item-prix">
+                        18€
+                    </div>
+                </div>
+
+                <div class="menu-item flex">
+                    <div class="menu-item-text">
+                        <strong>Fondant au chocolat</strong>
+                        <p>Revisité</p>
+                    </div>
+                    <div class="menu-item-prix">
+                        22€
+                    </div>
+                </div>
+
+                <div class="menu-item flex">
+                    <div class="menu-item-text">
+                        <strong>Millefeuille croustillant</strong>
+                        <p>Myrtilles et pâte d’amande</p>
+                    </div>
+                    <div class="menu-item-prix">
+                        23€
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
 </body>
+
 </html>
