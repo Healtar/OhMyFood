@@ -301,5 +301,9 @@ h2 {
 .main-menu section .article .menu-item-prix {
   margin-right: 15px;
 }
+.main-menu section .article .menu-item:active {
+  background-color: rgba(147, 86, 220, 0.1333333333);
+  transition: 0.1s;
+}
 
 /*# sourceMappingURL=style.css.map */

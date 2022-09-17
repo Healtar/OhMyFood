@@ -69,6 +69,11 @@
                 &-prix {
                     margin-right: 15px;
                 }
+                &:active{
+                    background-color: $primary-transparant;
+                    transition: 0.1s;
+                    
+                }
             }
         }
     }
