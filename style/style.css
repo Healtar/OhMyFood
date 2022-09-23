@@ -326,11 +326,11 @@ h2 {
   border-radius: 20px;
   box-shadow: 2px 5px 20px -10px #7e7e7e;
 }
-.main .section__fonctionnement__steps .step:active {
+.main .section__fonctionnement__steps .step:active, .main .section__fonctionnement__steps .step:hover {
   background-color: rgba(147, 86, 220, 0.1333333333);
   transition: 0.1s;
 }
-.main .section__fonctionnement__steps .step:active .icone {
+.main .section__fonctionnement__steps .step:active .icone, .main .section__fonctionnement__steps .step:hover .icone {
   color: #9356DC;
 }
 .main .section__fonctionnement__steps .step .rounded-number {
