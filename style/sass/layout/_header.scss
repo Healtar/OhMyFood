@@ -1,17 +1,18 @@
 .main-header {
     padding-top: 20px;
     padding-bottom: 10px;
-   
-
-    &__title {
-        
-        justify-content: center;
-        a{
-            margin: auto 0;
-            margin-right: 40px;
-
+  
+    a{
+           position: absolute;
+           top: 8%;
+        left: 12%;
            
         }
+
+    &__title {
+     
+        justify-content: center;
+       
         span {
             display: none;
             font-size: 2em;
@@ -21,6 +22,32 @@
         .logo {
             width: 60%;
             
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .main-header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+      
+        
+    
+        &__title {
+         
+            justify-content: center;
+           
+            span {
+                display: none;
+                font-size: 2em;
+                margin-right: 40px;
+            }
+    
+            .logo {
+                width: 35%;
+                
+            }
         }
     }
 }

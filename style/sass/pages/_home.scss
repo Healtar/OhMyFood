@@ -1,8 +1,9 @@
 .main {
-
     flex-direction: column;
     gap: 20px;
-
+    &__main {
+        flex-direction: column;
+    }
     &__main-header {
         .location {
             justify-content: center;
@@ -10,7 +11,7 @@
             background-color: $gray-ligther;
             color: $dark;
             gap: 10px;
-            box-shadow: inset 0px 4px 15px -10px $gray;            
+            box-shadow: inset 0px 4px 15px -10px $gray;
         }
 
         .reservation {
@@ -40,18 +41,17 @@
                 flex-direction: column;
                 gap: 20px;
                 font-size: 14px;
-                
 
-                .icone{
+                .icone {
                     margin: 0 20px;
                     color: $gray;
                 }
 
-                .step{
-                    &:active{
+                .step {
+                    &:active {
                         background-color: $primary-transparant;
                         transition: 0.1s;
-                        .icone{
+                        .icone {
                             color: $primary;
                         }
                     }
@@ -62,26 +62,76 @@
                         font-size: 13px;
                         font-weight: normal;
                         margin-left: -30px;
-                        color: white; 
+                        color: white;
                     }
                     font-size: 14px;
                     font-weight: bold;
-                   background-color: $ligth;
-                   padding: 20px;
-                   border-radius: 20px;
-                   box-shadow: 2px 5px 20px -10px $gray;
-                  
+                    background-color: $ligth;
+                    padding: 20px;
+                    border-radius: 20px;
+                    box-shadow: 2px 5px 20px -10px $gray;
                 }
             }
         }
 
-        &__restaurants{
+        &__restaurants {
             padding-top: 40px;
             padding-bottom: 60px;
             flex-direction: column;
             gap: 15px;
             background-color: $ligth;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        &__main-header {
+            font-size: 1.2em;
            
+    
+            .reservation {
+             
+                strong {
+                  font-size: 24px;
+                }
+    
+                p {
+                   font-size: 18px;
+                }
+            }
+        }
+        &__main {
+            flex-direction: row;
+            height: 500px;
+            
+        }
+        .section {
+            margin: auto;
+
+            &__fonctionnement {
+                h2{
+                    margin-top: -20px;
+                }
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .step {
+                    line-height: auto;
+                    font-size: 18px;
+                }
+            }
+            &__restaurants {
+                h2 {
+                    width: 100%;
+                    margin: -20px 0;
+                }
+                margin-bottom: 20px;
+                border-radius: 30px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 45px;
+            }
         }
     }
 }

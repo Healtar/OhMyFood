@@ -9,9 +9,11 @@ li{
 
 a{
     text-decoration: none;
+    color: inherit;
 
     &:visited{
         text-decoration: none;
+        color: inherit;
     }
 }
 
@@ -25,4 +27,15 @@ a{
 
 .text-center{
     text-align: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        width: 1200px;
+        margin: auto;
+    }
 }

@@ -2,17 +2,24 @@
     .heart{
         width: 25px;
         height: 25px;
-        fill: url(#gradiant);
+        fill: url(#gradiant); 
+        fill-opacity: 0;
         stroke-width: 20px;
         stroke: #000;
         position:relative;  
         overflow:hidden;
+        
+        &:hover{
+            
+          animation: gradient-heart 0.3s ease forwards;
+          
+            }
+    }
 
-        &:active{
-            background-color: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(204,105,219,1) 72%, rgba(255,121,218,1) 100%);
-            transition: 0.2s ease-in-out;      
+    @keyframes gradient-heart {
+        to{
+            fill-opacity: 1;
         }
 
-   
     }
 
