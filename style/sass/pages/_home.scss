@@ -50,7 +50,7 @@
                 .step {
                     &:active, &:hover {
                         background-color: $primary-transparant;
-                        transition: 0.1s;
+                        transition: 0.3s;
                         .icone {
                             color: $primary;
                         }
@@ -86,8 +86,14 @@
 
 @media (min-width: 1200px) {
     .main {
+        margin: 50px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
         &__main-header {
             font-size: 1.2em;
+           width: 100%;
            
     
             .reservation {
@@ -107,30 +113,46 @@
             
         }
         .section {
-            margin: auto;
+            margin: 0;
+            width: calc(40% - 45px);
 
             &__fonctionnement {
+                height: 230px;
+              
                 h2{
                     margin-top: -20px;
                 }
-                margin-top: 20px;
+                margin-top: 30px;
                 margin-bottom: 20px;
-                .step {
+                &__steps{
+                    gap: 56px;
+                    .step {
                     line-height: auto;
-                    font-size: 18px;
+                    font-size: 22px;
+                    padding: 30px 20px;
+                    border-radius: 40px;
+                    .rounded-number{
+                        padding: 6px 12px;
+                        font-size: 18px;
+                    }
                 }
+                }
+               
             }
             &__restaurants {
                 h2 {
                     width: 100%;
                     margin: -20px 0;
                 }
+                height: 350px;
+                padding-top: 30px;
                 margin-bottom: 20px;
                 border-radius: 30px;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 45px;
+             gap: 20px;
+                box-shadow: 2px 5px 20px -10px $gray;
             }
         }
     }

@@ -55,31 +55,41 @@
                 line-height: 1.5;
                 background-color: #fff;
                 border-radius: 20px;
-                
-                align-items: flex-end;
+                overflow: hidden;
+            position: relative;
                 margin: 0 -12px;
                 padding: 13px 12px;
                 box-shadow: 0px 6px 15px -10px rgba(126, 126, 126, 0.95);
-                position: relative;
+          
                 &-text {
+                    display: inline-block;
                     strong {
                         font-weight: bold;
                         font-size: 18px;
                     }
                 }
                 &-prix {
-                    margin-right: 15px;
-                    align-self: flex-end;
+                    margin-left: auto;
                 }
                 &:active{
-                    background-color: $primary-transparant;
-                    transition: 0.1s;
+                   .offset{
+                    right: 0;
+                   }
                     
                 }
                 &__selected{
                     width: 100px;
                     height: 100%;
                     scale: 0;
+                }
+                .offset{
+                    height: 100%;
+                    width: 100px;
+                    background-color: aqua;
+                    position: absolute;
+                    right: -100px;
+                    top: 0;
+                    transition: 0.5s;
                 }
             }
         }
