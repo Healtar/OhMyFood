@@ -48,9 +48,10 @@
                 }
 
                 .step {
+                    transition: 0.3s;
                     &:active, &:hover {
                         background-color: $primary-transparant;
-                        transition: 0.3s;
+                        
                         .icone {
                             color: $primary;
                         }
@@ -130,7 +131,7 @@
                     line-height: auto;
                     font-size: 22px;
                     padding: 30px 20px;
-                    border-radius: 40px;
+                    border-radius: 50px;
                     .rounded-number{
                         padding: 6px 12px;
                         font-size: 18px;

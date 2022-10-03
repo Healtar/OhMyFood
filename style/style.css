@@ -81,6 +81,7 @@
 @keyframes gradient-heart {
   to {
     fill-opacity: 1;
+    stroke-width: 0;
   }
 }
 @font-face {
@@ -318,6 +319,7 @@ h2 {
   color: #7e7e7e;
 }
 .main .section__fonctionnement__steps .step {
+  transition: 0.3s;
   font-size: 14px;
   font-weight: bold;
   background-color: #f6f6f6;
@@ -327,7 +329,6 @@ h2 {
 }
 .main .section__fonctionnement__steps .step:active, .main .section__fonctionnement__steps .step:hover {
   background-color: rgba(147, 86, 220, 0.1333333333);
-  transition: 0.3s;
 }
 .main .section__fonctionnement__steps .step:active .icone, .main .section__fonctionnement__steps .step:hover .icone {
   color: #9356DC;
@@ -390,7 +391,7 @@ h2 {
     line-height: auto;
     font-size: 22px;
     padding: 30px 20px;
-    border-radius: 40px;
+    border-radius: 50px;
   }
   .main .section__fonctionnement__steps .step .rounded-number {
     padding: 6px 12px;
