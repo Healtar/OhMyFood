@@ -486,13 +486,21 @@ h2 {
 }
 .main-menu section .article .menu-item-content__text {
   display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
 }
 .main-menu section .article .menu-item-content__text strong {
   font-weight: bold;
-  font-size: 18px;
+}
+.main-menu section .article .menu-item-content__text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .main-menu section .article .menu-item-content__prix {
   margin-left: auto;
+  padding-left: 10px;
 }
 .main-menu section .article .menu-item:active .offset, .main-menu section .article .menu-item:hover .offset {
   right: 0;
@@ -515,6 +523,7 @@ h2 {
   border-radius: 30px;
   background-color: #fff;
   color: #99E2D0;
+  margin-top: 30%;
 }
 
 @keyframes rotate180 {

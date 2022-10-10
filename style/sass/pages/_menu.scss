@@ -73,13 +73,22 @@
                 
                     &__text {
                         display: inline-block;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        font-size: 16px;
                         strong {
                             font-weight: bold;
-                            font-size: 18px;
                         }
+                        p{
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                       
                     }
                     &__prix {
                         margin-left: auto;
+                        padding-left: 10px;
                     }
                 }
 
@@ -102,12 +111,13 @@
                     transition: 0.5s;
                     text-align: center;
                     
+                    
                     i{
                         padding: 6px 7px;
                         border-radius: 30px;
                         background-color: #fff;
                         color: $tertiary;
-                     
+                     margin-top: 30%;
                         
                         
                     }
