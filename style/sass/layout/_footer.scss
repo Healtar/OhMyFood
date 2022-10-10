@@ -32,3 +32,25 @@
 
 
 }
+
+@media (min-width: 1200px) {
+    .main__footer{
+        &__header{
+            svg{
+                width: 240px;
+                height: 68px;
+            }
+        }
+
+        &__nav{
+            .nav-list{
+                display: flex;
+                gap: 20px;
+                font-size: 24px;
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
