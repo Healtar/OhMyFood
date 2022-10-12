@@ -1,160 +1,201 @@
 .main {
+  flex-direction: column;
+  gap: 20px;
+
+  &__main {
     flex-direction: column;
-    gap: 20px;
-    &__main {
+  }
+
+  &__main-header {
+    .location {
+      justify-content: center;
+      padding: 12px 0;
+      background-color: $gray-ligther;
+      color: $dark;
+      gap: 10px;
+      box-shadow: inset 0 4px 15px -10px $gray;
+    }
+
+    .reservation {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+      background-color: $ligth;
+
+      strong {
+        display: inline-block;
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .section {
+    &__fonctionnement {
+      flex-direction: column;
+      gap: 20px;
+
+      &__steps {
         flex-direction: column;
-    }
-    &__main-header {
-        .location {
-            justify-content: center;
-            padding: 12px 0;
-            background-color: $gray-ligther;
-            color: $dark;
-            gap: 10px;
-            box-shadow: inset 0px 4px 15px -10px $gray;
+        gap: 20px;
+        font-size: 14px;
+
+        .icone {
+          margin: 0 20px;
+          color: $gray;
         }
 
-        .reservation {
-            flex-direction: column;
-            text-align: center;
-            padding: 40px 20px;
-            background-color: $ligth;
-            strong {
-                display: inline-block;
-                font-size: 22px;
-                margin-bottom: 10px;
-                font-weight: bold;
+        .step {
+          transition: 0.3s;
+
+          &:active, &:hover {
+            background-color: $primary-transparant;
+
+            .icone {
+              color: $primary;
             }
+          }
 
-            p {
-                font-size: 16px;
-                margin-bottom: 20px;
-            }
+          .rounded-number {
+            background-color: $primary;
+            border-radius: 20px;
+            padding: 4px 8px;
+            font-size: 13px;
+            font-weight: normal;
+            margin-left: -30px;
+            color: white;
+          }
+
+          font-size: 14px;
+          font-weight: bold;
+          background-color: $ligth;
+          padding: 20px;
+          border-radius: 20px;
+          box-shadow: 2px 5px 20px -10px $gray;
         }
+      }
     }
-    .section {
-        &__fonctionnement {
-            flex-direction: column;
-            gap: 20px;
 
-            &__steps {
-                flex-direction: column;
-                gap: 20px;
-                font-size: 14px;
-
-                .icone {
-                    margin: 0 20px;
-                    color: $gray;
-                }
-
-                .step {
-                    transition: 0.3s;
-                    &:active, &:hover {
-                        background-color: $primary-transparant;
-                        
-                        .icone {
-                            color: $primary;
-                        }
-                    }
-                    .rounded-number {
-                        background-color: $primary;
-                        border-radius: 20px;
-                        padding: 4px 8px;
-                        font-size: 13px;
-                        font-weight: normal;
-                        margin-left: -30px;
-                        color: white;
-                    }
-                    font-size: 14px;
-                    font-weight: bold;
-                    background-color: $ligth;
-                    padding: 20px;
-                    border-radius: 20px;
-                    box-shadow: 2px 5px 20px -10px $gray;
-                }
-            }
-        }
-
-        &__restaurants {
-            padding-top: 40px;
-            padding-bottom: 60px;
-            flex-direction: column;
-            gap: 15px;
-            background-color: $ligth;
-        }
+    &__restaurants {
+      padding-top: 40px;
+      padding-bottom: 60px;
+      flex-direction: column;
+      gap: 15px;
+      background-color: $ligth;
     }
+  }
+}
+
+@media (min-width: 500px){
+  .main{
+    .section__fonctionnement, .section__restaurants{
+      h2{
+        width: 100%;
+        font-size: 24px;
+        margin-left: 10px;
+      }
+    }
+
+    .section__fonctionnement{
+      &__steps{
+        .step{
+          font-size: 16px;
+        }
+      }
+    }
+
+    .section__restaurants{
+      justify-content: center;
+      gap: 20px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-    .main {
-        margin-bottom: 50px;
+  .main {
+    margin-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+    &__main-header {
+      font-size: 1.2em;
+      width: 100%;
+
+
+      .reservation {
+
+        strong {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__main {
+      flex-direction: row;
+      height: 500px;
+
+    }
+
+    .section {
+      margin: 0;
+      width: calc(40% - 45px);
+
+      &__fonctionnement {
+        h2 {
+          margin-top: -20px;
+          margin-bottom: 20px;
+        }
+
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        &__steps {
+          gap: 56px;
+
+          .step {
+            font-size: 22px;
+            padding: 30px 20px;
+            border-radius: 50px;
+
+            .rounded-number {
+              padding: 6px 12px;
+              font-size: 18px;
+            }
+          }
+        }
+
+      }
+
+      &__restaurants {
+        h2 {
+          width: 100%;
+          margin: -20px 20px;
+        }
+
+        height: 400px;
+        padding-top: 30px;
+        margin-bottom: 20px;
+        border-radius: 30px;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 40px;
-        justify-content: center;
-        &__main-header {
-            font-size: 1.2em;
-           width: 100%;
-           
-    
-            .reservation {
-             
-                strong {
-                  font-size: 24px;
-                }
-    
-                p {
-                   font-size: 18px;
-                }
-            }
-        }
-        &__main {
-            flex-direction: row;
-            height: 500px;
-            
-        }
-        .section {
-            margin: 0;
-            width: calc(40% - 45px);
-
-            &__fonctionnement {
-                height: 230px;
-              
-                h2{
-                    margin-top: -20px;
-                }
-                margin-top: 30px;
-                margin-bottom: 20px;
-                &__steps{
-                    gap: 56px;
-                    .step {
-                    line-height: auto;
-                    font-size: 22px;
-                    padding: 30px 20px;
-                    border-radius: 50px;
-                    .rounded-number{
-                        padding: 6px 12px;
-                        font-size: 18px;
-                    }
-                }
-                }
-               
-            }
-            &__restaurants {
-                h2 {
-                    width: 100%;
-                    margin: -20px 0;
-                }
-                height: 350px;
-                padding-top: 30px;
-                margin-bottom: 20px;
-                border-radius: 30px;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-             gap: 20px;
-                box-shadow: 2px 5px 20px -10px $gray;
-            }
-        }
+        justify-content: space-evenly;
+        row-gap: 20px;
+        box-shadow: 2px 5px 20px -10px $gray;
+      }
     }
+  }
 }
