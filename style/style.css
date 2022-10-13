@@ -442,9 +442,9 @@ h2 {
   }
   .main .section {
     margin: 0;
-    width: calc(40% - 45px);
   }
   .main .section__fonctionnement {
+    width: calc(30% - 45px);
     margin-top: 30px;
     margin-bottom: 20px;
   }
@@ -465,6 +465,7 @@ h2 {
     font-size: 18px;
   }
   .main .section__restaurants {
+    width: calc(50% - 45px);
     height: 400px;
     padding-top: 30px;
     margin-bottom: 20px;
