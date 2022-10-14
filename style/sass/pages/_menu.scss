@@ -53,8 +53,17 @@
           background-color: $tertiary;
         }
       }
-
+      $duration: 0.1s;
+      @for $i from 1 to 30{
+          .menu-item:nth-child(#{$i}){
+            animation: dropItem 0.6s ease forwards;
+            animation-delay: $duration;
+            $duration: $duration + 0.1s
+          }
+      }
       .menu-item {
+        opacity: 0;
+        transform: translateY(-200px);
         line-height: 1.5;
         background-color: #fff;
         border-radius: 20px;
@@ -132,6 +141,13 @@
         }
       }
     }
+  }
+}
+
+@keyframes dropItem{
+  to{
+    opacity: 1;
+    transform:  translateY(0px);
   }
 }
 
