@@ -3,6 +3,7 @@
 /******** COLORS ***********/
 /**************************/
 .button {
+  cursor: pointer;
   border-radius: 30px;
   font-size: 13px;
   color: #FFFFFF;
